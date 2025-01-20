@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Variables para light mode */
+:root {
+  --primary-color: #242526;
+  --secondary-color: #EEEEEE;
+  --background-color: #F5F5F5;
+}
+
+/* Variables para dark mode */
+.dark:root {
+  --primary-color: #EEEEEE;
+  --secondary-color: #A9ABB3;
+  --background-color: #181818;
+}
+
+body {
+  font-family: "JetBrains Mono", monospace;
+  color: var(--primary-color);
+  line-height: 2rem;
+  background-color: var(--background-color);
+}
+
+@media screen and (max-width: 750px) {
+  body {
+    padding: 1.5rem;
+  }
+  
+  header {
+    flex-direction: column;
+    gap: 3rem;
+  }
+  
+  #dark-mode-toggle {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    align-self: flex-end;
+  }
+}

@@ -1,0 +1,14 @@
+/* Transición general para todos los elementos */
+.transition-all {
+  transition: all 500ms ease-in-out;
+}
+
+/* Transición específica para el título (h1) */
+.transition-title {
+  transition: font-size 500ms ease-in-out;
+}
+
+/* Transición para el subtítulo (p) */
+.transition-subtitle {
+  transition: font-size 500ms ease-in-out, opacity 500ms ease-in-out;
+}
