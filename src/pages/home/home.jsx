@@ -66,6 +66,7 @@ const PROJECTS = [
     link: "https://brmediaboard.netlify.app/",
     github: "https://github.com/brdionel/media_board",
     image: "https://porfolio.dev/projects/svgl.webp",
+    path: "media-board",
     tags: [TAGS.REACT, TAGS.ZUSTAND, TAGS.TYPESCRIPT, TAGS.MATERIAL_UI],
   },
   {
@@ -74,6 +75,7 @@ const PROJECTS = [
     link: "https://brweatherwheel.netlify.app/",
     github: "https://github.com/brdionel/wheater-wheel",
     image: "https://porfolio.dev/projects/svgl.webp",
+    path: "weather-wheel",
     tags: [TAGS.REACT, TAGS.TAILWIND],
   },
   {
@@ -82,6 +84,7 @@ const PROJECTS = [
     link: "https://brtakingnotes.netlify.app/",
     github: "https://github.com/brdionel/takingnotes",
     image: "https://porfolio.dev/projects/svgl.webp",
+    path: "taking-notes",
     tags: [TAGS.REACT, TAGS.TANSTACK_QUERY, TAGS.NODE, TAGS.MYSQL],
   },
 ];

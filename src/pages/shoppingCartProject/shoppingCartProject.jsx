@@ -42,7 +42,7 @@ const ShoppingCartProject = () => {
           </div>
 
           <div className="flex flex-col md:grid grid-cols-1 md:grid-cols-2 gap-8 mb-10">
-            <div className="flex flex-col justify-center items-start p-4 order-1 md:order-none">
+            <div className="flex flex-col justify-start items-start p-4 order-1 md:order-none">
               <h2 className="text-2xl font-semibold">Cart management</h2>
               <p>
                 Allows users to add, remove, and adjust item quantities in the
@@ -64,7 +64,7 @@ const ShoppingCartProject = () => {
                 className="w-full h-auto rounded-lg shadow-md"
               />
             </div>
-            <div className="flex flex-col justify-center items-start p-4 order-3 md:order-none">
+            <div className="flex flex-col justify-start items-start p-4 order-3 md:order-none">
               <h2 className="text-2xl font-semibold">User Management</h2>
               <p>
                 Allows users to create an account by entering their details or
@@ -74,7 +74,7 @@ const ShoppingCartProject = () => {
               </p>
             </div>
 
-            <div className="flex flex-col justify-center items-start p-4 order-5 md:order-none">
+            <div className="flex flex-col justify-start items-start p-4 order-5 md:order-none">
               <h2 className="text-2xl font-semibold">Favorites Management</h2>
               <p>
                 Allows users to add and store their favorite products, making it
