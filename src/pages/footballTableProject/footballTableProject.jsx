@@ -3,7 +3,7 @@ import Header from "../../componentes/header";
 import GithubIcon from "../../componentes/icons/github/github";
 import PreviewIcon from "../../componentes/icons/preview/preview";
 import PreviewSite from "./assets/preview_1.png";
-import PreviewFilters from "./assets/preview_2.PNG";
+import PreviewFilters from "./assets/preview_2.png";
 import PreviewSearch from "./assets/preview_3.png";
 import PreviewUrl from "./assets/preview_4.png";
 import Footer from "../../componentes/footer";
