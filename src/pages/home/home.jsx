@@ -7,6 +7,7 @@ import NodeIcon from "../../componentes/icons/node";
 import MySQLIcon from "../../componentes/icons/mySQL";
 import TypeScriptIcon from "../../componentes/icons/typescript";
 import TanstackIcon from "../../componentes/icons/tanstack";
+import ReactTestingLibraryIcon from "../../componentes/icons/reactTestingLibrary";
 import { Link } from "react-router-dom";
 import Header from "../../componentes/header";
 import Footer from "../../componentes/footer";
@@ -48,6 +49,10 @@ const TAGS = {
     name: "Tanstack Query",
     icon: TanstackIcon,
   },
+  REACT_TESTING_LIBRARY: {
+    name: "React Testing Library",
+    icon: ReactTestingLibraryIcon
+  }
 };
 
 const PROJECTS = [
@@ -87,12 +92,22 @@ const PROJECTS = [
     path: "taking-notes",
     tags: [TAGS.REACT, TAGS.TANSTACK_QUERY, TAGS.NODE, TAGS.MYSQL],
   },
+  {
+    title: "Football Table",
+    description: "React Project",
+    link: "https://brweatherwheel.netlify.app/",
+    github: "https://brfootball.netlify.app/",
+    image: "https://porfolio.dev/projects/svgl.webp",
+    path: "football-table",
+    tags: [TAGS.REACT, TAGS.TAILWIND, TAGS.REACT_TESTING_LIBRARY],
+  },
 ];
 
 function Home() {
   return (
     <main className="my-0 mx-auto max-w-[650px] py-12">
       <Header />
+      <ReactTestingLibraryIcon className="size-0"/>
       <section className="flex justify-start items-center">
         <section>
           <img
@@ -127,83 +142,6 @@ function Home() {
         </section>
       </section>
       <section className="grid gap-y-8 mt-16 mx-0 mb-12">
-        {/* <article className="p-8 bg-[#e8e8e8] rounded-[15px] transition-all duration-200 ease-in-out hover:scale-[1.05] dark:bg-[#25282C]">
-          <div>
-            <h2 className="text-primary-light font-thin italic text-[1.4rem] leading-[130%] w-full dark:text-[#A9ABB3]">
-              React Cart: Product Listing, Favorites, and Shopping Cart
-              Management
-            </h2>
-          </div>
-          <div className="flex flex-wrap justify-start pt-[1em] px-0 pb-0">
-            {}
-            <span className="mt-0 mr-2 mb-[.3rem] ml-0 block text-[#EEEEEE] bg-primary-light rounded-[15px] text-[.7rem] py-0 px-[0.8rem] leading-[1.3rem] cursor-pointer dark:bg-[#A9ABB3] dark:text-[#151618]">
-              Unreal Engine
-            </span>
-            <span className="mt-0 mr-2 mb-[.3rem] ml-0 block text-[#EEEEEE] bg-primary-light rounded-[15px] text-[.7rem] py-0 px-[0.8rem] leading-[1.3rem] cursor-pointer dark:bg-[#A9ABB3] dark:text-[#151618]">
-              Animation
-            </span>
-            <span className="mt-0 mr-2 mb-[.3rem] ml-0 block text-[#EEEEEE] bg-primary-light rounded-[15px] text-[.7rem] py-0 px-[0.8rem] leading-[1.3rem] cursor-pointer dark:bg-[#A9ABB3] dark:text-[#151618]">
-              Advanced Locomotion System
-            </span>
-          </div>
-        </article>
-        <article className="p-8 bg-[#e8e8e8] rounded-[15px] transition-all duration-200 ease-in-out hover:scale-[1.05] dark:bg-[#25282C] dark:text-[#A9ABB3]">
-          <div>
-            <h2 className="text-primary-light font-thin italic text-[1.4rem] leading-[130%] w-full dark:text-[#A9ABB3]">
-              Media Explorer: Browse and Discover Series and Movies
-            </h2>
-            <small className="block text-[.8rem]">01/2025</small>
-          </div>
-          <div className="flex flex-wrap justify-start pt-[1em] px-0 pb-0">
-            <span className="mt-0 mr-2 mb-[.3rem] ml-0 block text-[#EEEEEE] bg-primary-light rounded-[15px] text-[.7rem] py-0 px-[0.8rem] leading-[1.3rem] cursor-pointer dark:bg-[#A9ABB3] dark:text-[#151618]">
-              Unreal Engine
-            </span>
-            <span className="mt-0 mr-2 mb-[.3rem] ml-0 block text-[#EEEEEE] bg-primary-light rounded-[15px] text-[.7rem] py-0 px-[0.8rem] leading-[1.3rem] cursor-pointer dark:bg-[#A9ABB3] dark:text-[#151618]">
-              Animation
-            </span>
-            <span className="mt-0 mr-2 mb-[.3rem] ml-0 block text-[#EEEEEE] bg-primary-light rounded-[15px] text-[.7rem] py-0 px-[0.8rem] leading-[1.3rem] cursor-pointer dark:bg-[#A9ABB3] dark:text-[#151618]">
-              Advanced Locomotion System
-            </span>
-          </div>
-        </article>
-        <article className="p-8 bg-[#e8e8e8] rounded-[15px] transition-all duration-200 ease-in-out hover:scale-[1.05] dark:bg-[#25282C] dark:text-[#A9ABB3]">
-          <div>
-            <h2 className="text-primary-light font-thin italic text-[1.4rem] leading-[130%] w-full dark:text-[#A9ABB3]">
-              Advanced Locomotion Systems: Initial thoughts
-            </h2>
-            <small className="block text-[.8rem]"></small>
-          </div>
-          <div className="flex flex-wrap justify-start pt-[1em] px-0 pb-0">
-            <span className="mt-0 mr-2 mb-[.3rem] ml-0 block text-[#EEEEEE] bg-primary-light rounded-[15px] text-[.7rem] py-0 px-[0.8rem] leading-[1.3rem] cursor-pointer dark:bg-[#A9ABB3] dark:text-[#151618]">
-              Unreal Engine
-            </span>
-            <span className="mt-0 mr-2 mb-[.3rem] ml-0 block text-[#EEEEEE] bg-primary-light rounded-[15px] text-[.7rem] py-0 px-[0.8rem] leading-[1.3rem] cursor-pointer dark:bg-[#A9ABB3] dark:text-[#151618]">
-              Animation
-            </span>
-            <span className="mt-0 mr-2 mb-[.3rem] ml-0 block text-[#EEEEEE] bg-primary-light rounded-[15px] text-[.7rem] py-0 px-[0.8rem] leading-[1.3rem] cursor-pointer dark:bg-[#A9ABB3] dark:text-[#151618]">
-              Advanced Locomotion System
-            </span>
-          </div>
-        </article>
-        <article className="p-8 bg-[#e8e8e8] rounded-[15px] transition-all duration-200 ease-in-out hover:scale-[1.05] dark:bg-[#25282C] dark:text-[#A9ABB3]">
-          <div>
-            <h2 className="text-primary-light font-thin italic text-[1.4rem] leading-[130%] w-full dark:text-[#A9ABB3]">
-              Advanced Locomotion Systems: Initial thoughts
-            </h2>
-            <small className="block text-[.8rem]"></small>
-          </div>
-          <div className="flex flex-wrap justify-start pt-[1em] px-0 pb-0">
-            <span className="mt-0 mr-2 mb-[.3rem] ml-0 block text-[#EEEEEE] bg-primary-light rounded-[15px] text-[.7rem] py-0 px-[0.8rem] leading-[1.3rem] cursor-pointer dark:bg-[#A9ABB3] dark:text-[#151618]">
-              Unreal Engine
-            </span>
-            <span className="mt-0 mr-2 mb-[.3rem] ml-0 block text-[#EEEEEE] bg-primary-light rounded-[15px] text-[.7rem] py-0 px-[0.8rem] leading-[1.3rem] cursor-pointer dark:bg-[#A9ABB3] dark:text-[#151618]">
-              Animation
-            </span>
-            <span className="mt-0 mr-2 mb-[.3rem] ml-0 block text-[#EEEEEE] bg-primary-light rounded-[15px] text-[.7rem] py-0 px-[0.8rem] leading-[1.3rem] cursor-pointer dark:bg-[#A9ABB3] dark:text-[#151618]">
-              Advanced Locomotion System
-            </span>
-          </div>
-        </article> */}
         {PROJECTS.map((project) => (
           <Link to={`/project/${project.path}`} key={project.title}>
             <article className="p-8 bg-[#e8e8e8] rounded-[15px] transition-all duration-200 ease-in-out hover:scale-[1.05] dark:bg-[#25282C] dark:text-[#A9ABB3]">
