@@ -8,6 +8,7 @@ import PreviewUArchivedNotes from "./assets/preview_3.png";
 import PreviewAddCategories from "./assets/preview_4.png";
 import Footer from "../../componentes/footer";
 import { Fragment } from "react";
+import ScrollToTop from "../../componentes/scrollToTop";
 
 const TakingNotesProject = () => {
   return (

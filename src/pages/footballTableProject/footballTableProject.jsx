@@ -7,6 +7,7 @@ import PreviewFilters from "./assets/preview_2.png";
 import PreviewSearch from "./assets/preview_3.png";
 import PreviewUrl from "./assets/preview_4.png";
 import Footer from "../../componentes/footer";
+import ScrollToTop from "../../componentes/scrollToTop";
 import { Fragment } from "react";
 
 const FootballTableProject = () => {
