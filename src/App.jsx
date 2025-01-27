@@ -5,13 +5,11 @@ import TakingNotesProject from "./pages/takingNotesProject";
 import MediaBoardProject from "./pages/mediaBoardProject";
 import WeatherWheelProject from "./pages/weatherWheelProject";
 import FootballTableProject from "./pages/footballTableProject";
-import ScrollToTop from "./componentes/scrollToTop";
 import PageNotFound from "./pages/pageNotFound";
 
 function App() {
   return (
     <Router>
-      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route
