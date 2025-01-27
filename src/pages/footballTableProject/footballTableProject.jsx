@@ -6,6 +6,7 @@ import PreviewSite from "./assets/preview_1.png";
 import PreviewFilters from "./assets/preview_2.png";
 import PreviewSearch from "./assets/preview_3.png";
 import PreviewUrl from "./assets/preview_4.png";
+import PreviewSort from "./assets/preview_5.png";
 import Footer from "../../componentes/footer";
 import ScrollToTop from "../../componentes/scrollToTop";
 import { Fragment } from "react";
@@ -85,6 +86,21 @@ const FootballTableProject = () => {
                                     className="w-full h-auto rounded-lg shadow-md"
                                 />
                             </div>
+
+                            <div className="flex justify-center items-center p-4 order-4 md:order-none">
+                                <img
+                                    src={PreviewSort}
+                                    alt="Imagen"
+                                    className="w-full h-auto rounded-lg shadow-md"
+                                />
+                            </div>
+                            <div className="flex flex-col justify-start items-start p-4 order-3 md:order-none">
+                                <h2 className="text-2xl font-semibold">Sorting Teams by Column</h2>
+                                <p>
+                                    Clicking on the headers of these columns sorts the teams based on the selected column's criteria, such as name, country, league, year founded, or titles won
+                                </p>
+                            </div>
+
                         </div>
 
                         <div className="mb-7">
