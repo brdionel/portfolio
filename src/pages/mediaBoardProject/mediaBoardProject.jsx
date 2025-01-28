@@ -6,10 +6,14 @@ import PreviewSite from "./assets/preview_1.png";
 import Footer from "../../componentes/footer";
 import { Fragment } from "react";
 import ScrollToTop from "../../componentes/scrollToTop";
+import { Helmet } from "react-helmet-async";
 
 const MediaBoardProject = () => {
   return (
     <Fragment>
+      <Helmet>
+        <title>Media Board Project - Bruno's Portfolio</title>
+      </Helmet>
       <ScrollToTop />
       <main className="my-0 mx-auto max-w-[650px] py-12">
         <Header />

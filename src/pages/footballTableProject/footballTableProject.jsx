@@ -10,10 +10,14 @@ import PreviewSort from "./assets/preview_5.png";
 import Footer from "../../componentes/footer";
 import ScrollToTop from "../../componentes/scrollToTop";
 import { Fragment } from "react";
+import { Helmet } from "react-helmet-async";
 
 const FootballTableProject = () => {
     return (
         <Fragment>
+            <Helmet>
+                <title>Football Table Project | Bruno's Portfolio</title>
+            </Helmet>
             <ScrollToTop />
             <main className="my-0 mx-auto max-w-[650px] py-12">
                 <Header />

@@ -9,10 +9,14 @@ import PreviewUser from "./assets/preview_3.png";
 import PreviewFavorite from "./assets/preview_4.png";
 import Footer from "../../componentes/footer";
 import ScrollToTop from "../../componentes/scrollToTop";
+import { Helmet } from "react-helmet-async";
 
 const ShoppingCartProject = () => {
   return (
     <Fragment>
+      <Helmet>
+        <title>Shopping Cart Project - Bruno's Portfolio</title>
+      </Helmet>
       <ScrollToTop />
       <main className="my-0 mx-auto max-w-[650px] py-12">
         <Header />
