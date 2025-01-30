@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import Header from "../../componentes/header";
 import Footer from "../../componentes/footer";
 import { Fragment } from "react";
+import { Helmet } from "react-helmet-async";
 
 const PageNotFound = () => {
     return (

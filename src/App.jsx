@@ -6,6 +6,7 @@ import MediaBoardProject from "./pages/mediaBoardProject";
 import WeatherWheelProject from "./pages/weatherWheelProject";
 import FootballTableProject from "./pages/footballTableProject";
 import PageNotFound from "./pages/pageNotFound";
+import SalesServicesDNDProjectProject from "./pages/salesServiceDNDProjext";
 
 function App() {
   return (
@@ -25,6 +26,10 @@ function App() {
         <Route
           path="/project/football-table"
           element={<FootballTableProject />}
+        />
+        <Route 
+          path="/project/sales-services"
+          element={<SalesServicesDNDProjectProject />}
         />
         <Route path="*" element={<PageNotFound />} />
       </Routes>

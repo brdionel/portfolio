@@ -103,6 +103,15 @@ const PROJECTS = [
     path: "football-table",
     tags: [TAGS.REACT, TAGS.TAILWIND, TAGS.REACT_TESTING_LIBRARY],
   },
+  {
+    title: "Sales Services DND",
+    description: "React Project",
+    link: "https://salesservicesdnd.netlify.app/",
+    github: "https://github.com/brdionel/seller_attendance",
+    image: "https://porfolio.dev/projects/svgl.webp",
+    path: "sales-services",
+    tags: [TAGS.REACT, TAGS.TAILWIND],
+  },
 ];
 
 function Home() {
@@ -121,7 +130,7 @@ function Home() {
           <section>
             <img
               src="https://res.cloudinary.com/dtnixnyfz/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1736834224/20241129_132851_ajoasx.jpg"
-              className="rounded-full max-w-[100%] w-[100px] h-[100px]"
+              className="rounded-full max-w-[100%] w-[100px] h-[100px] object-cover"
             />
           </section>
           <section className="ml-4">
