@@ -23,7 +23,7 @@ const FootballTableProject = () => {
                 <Header />
                 <section className="mb-4">
                     <h2 className="text-5xl mb-2 leading-[140%] font-bold text-primary-light dark:text-[#EEEEEE] ">
-                        Footbal Table
+                        Football Table
                     </h2>
                     <div className="flex flex-wrap justify-start pt-[1em] px-0 pb-0 mb-6">
                         <Link
