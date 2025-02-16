@@ -6,7 +6,8 @@ import MediaBoardProject from "./pages/mediaBoardProject";
 import WeatherWheelProject from "./pages/weatherWheelProject";
 import FootballTableProject from "./pages/footballTableProject";
 import PageNotFound from "./pages/pageNotFound";
-import SalesServicesDNDProjectProject from "./pages/salesServiceDNDProjext";
+import SalesServicesDNDProject from "./pages/salesServiceDNDProjext";
+import ReplicaVeladaIIIProject from "./pages/replicaVeladaIII";
 
 function App() {
   return (
@@ -29,7 +30,11 @@ function App() {
         />
         <Route 
           path="/project/sales-services"
-          element={<SalesServicesDNDProjectProject />}
+          element={<SalesServicesDNDProject />}
+        />
+        <Route 
+          path="/project/replica-velada-III"
+          element={<ReplicaVeladaIIIProject />}
         />
         <Route path="*" element={<PageNotFound />} />
       </Routes>

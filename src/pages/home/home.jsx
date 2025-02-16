@@ -112,6 +112,15 @@ const PROJECTS = [
     path: "sales-services",
     tags: [TAGS.REACT, TAGS.TAILWIND],
   },
+  {
+    title: "Replica of La Velada III's site",
+    description: "React Project",
+    link: "https://brdionelreplicavelada3.netlify.app/",
+    github: "https://github.com/brdionel/Replica-of-the-La-Velada-3-website",
+    image: "https://porfolio.dev/projects/svgl.webp",
+    path: "replica-velada-III",
+    tags: [TAGS.REACT, TAGS.TAILWIND],
+  },
 ];
 
 function Home() {
