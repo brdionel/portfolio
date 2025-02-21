@@ -184,7 +184,7 @@ function Home() {
                   {project.tags.map((tag) => (
                     <span
                       key={tag.name}
-                      className={`mt-0 mr-2 mb-[.3rem] ml-0 block text-[#EEEEEE] bg-primary-light rounded-[15px] text-[.7rem] py-0 px-[0.8rem] leading-[1.3rem] cursor-pointer dark:bg-[#A9ABB3] dark:text-[#151618] flex items-center gap-x-2`}
+                      className={`mt-0 mr-2 mb-[.3rem] ml-0 text-[#EEEEEE] bg-primary-light rounded-[15px] text-[.7rem] py-0 px-[0.8rem] leading-[1.3rem] cursor-pointer dark:bg-[#A9ABB3] dark:text-[#151618] flex items-center gap-x-2`}
                     >
                       <tag.icon className={"size-4"} />
                       {tag.name}
