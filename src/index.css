@@ -16,6 +16,15 @@
   --background-color: #181818;
 }
 
+::selection {
+  background-color: yellow;
+}
+
+.dark::selection {
+  color: #242526;
+}
+
+
 body {
   font-family: "JetBrains Mono", monospace;
   color: var(--primary-color);
